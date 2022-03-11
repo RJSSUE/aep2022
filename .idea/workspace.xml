@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e81e640d-5c4e-4bda-af14-897fac96cf0a" name="Changes" comment="" />
+    <list default="true" id="e81e640d-5c4e-4bda-af14-897fac96cf0a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/edu/berkeley/aep/ArithmeticQuantity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/berkeley/aep/BestQuantity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/berkeley/aep/Bestable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/berkeley/aep/Chance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/berkeley/aep/MyString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/berkeley/aep/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/berkeley/aep/ScaledQuantity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/berkeley/aep/Unit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/edu/berkeley/aep/BestQuantityTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/edu/berkeley/aep/ChanceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/edu/berkeley/aep/RectangleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/edu/berkeley/aep/SquareTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/edu/berkeley/aep/StringTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/edu/berkeley/aep/UnitTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +27,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="26GDhVsFYx62R8yM4yNm0CfBWHW" />
   <component name="ProjectViewState">

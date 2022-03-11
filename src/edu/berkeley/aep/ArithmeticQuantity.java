@@ -1,16 +1,17 @@
 package edu.berkeley.aep;
 
-// Understands a measurement in a given unit
+//compare and calculate metrics in different units
 public class ArithmeticQuantity extends ScaledQuantity {
 
-    public ArithmeticQuantity(int amount, Unit unit) {
-        super(amount, unit);
+    public ArithmeticQuantity(Unit unit, Double value) {
+        super(unit, value);
     }
 
     public ArithmeticQuantity add(ArithmeticQuantity other) {
-        if (!unit.isComparableTo(other.unit))
-            throw new RuntimeException("Cannot compare a " + unit + " to a " + other.unit);
-        var otherAmount = other.unit.convertTo(this.unit, other.amount);
-        return new ArithmeticQuantity(amount + otherAmount, unit);
+        // exception if not in the same category
+        bombIfNotSameCategory(other);
+        Unit type = Unit.INCH;
+        if (unit.isSameCategory(Unit.TSP)) type = Unit.TSP;
+        return new ArithmeticQuantity(type,convertToMinimumUnit()+other.convertToMinimumUnit());
     }
 }

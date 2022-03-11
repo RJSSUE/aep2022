@@ -1,34 +1,37 @@
 package edu.berkeley.aep;
 
-public class ScaledQuantity implements Bestable {
-    protected final int amount;
+public class ScaledQuantity implements Bestable<ScaledQuantity> {
     protected final Unit unit;
+    protected final Double value;
 
-    public ScaledQuantity(int amount, Unit unit) {
-        this.amount = amount;
+    public ScaledQuantity(Unit unit, Double value) {
         this.unit = unit;
+        this.value = value;
+    }
+
+    public double convertToMinimumUnit() {
+        return unit.convertToMinimumUnit(value);
     }
 
     @Override
     public boolean equals(Object other) {
-        if (this == other) return true;
+        if (other == this) return true;
         if (!(other instanceof ScaledQuantity)) return false;
-        ScaledQuantity otherQuantity = (ScaledQuantity) other;
-        return otherQuantity.convert(this.unit) == amount;
-    }
-
-    int convert(Unit unit) {
-        return this.unit.convertTo(unit, amount);
+        if (!unit.isSameCategory(((ScaledQuantity) other).unit)) return false;
+        return convertToMinimumUnit() == ((ScaledQuantity) other).convertToMinimumUnit();
     }
 
     @Override
-    public String toString() {
-        return amount + " " + unit;
+    public int hashCode() {
+        return Double.hashCode(convertToMinimumUnit());
     }
 
     @Override
-    public boolean betterThan(Bestable other) {
-        ScaledQuantity otherQuantity = (ScaledQuantity) other;
-        return amount > otherQuantity.convert(unit);
+    public boolean betterThan(ScaledQuantity other) {
+        return convertToMinimumUnit() > other.convertToMinimumUnit();
+    }
+
+    void bombIfNotSameCategory(ScaledQuantity other) {
+        if (!unit.isSameCategory(other.unit)) throw new RuntimeException("Cannot compare between different categories!");
     }
 }

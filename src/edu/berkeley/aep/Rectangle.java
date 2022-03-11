@@ -1,29 +1,43 @@
 package edu.berkeley.aep;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-// Understands a four-sided figure with sides at right angles
+//understands a shape with four sides and right angles
 public class Rectangle {
-    private final int length;
-    private final int width;
+    private int width;
+    private int height;
+
+    public Rectangle(int width, int height){
+        this.width = width;
+        this.height = height;
+    }
 
     public static Rectangle createSquare(int side) {
-        return new Rectangle(side, side);
+        return new Rectangle(side,side);
     }
 
-    public Rectangle(int length, int width) {
-        this.length = length;
-        this.width = width;
+    public int getArea(){
+        return width*height;
     }
 
-    public int area() {
-        return length * width;
+    public int getPerimeter(){
+        return 2*width + 2*height;
     }
 
-    public int perimeter() {
-        return 2 * length + 2 * width;
+/*
+    // Don't break encapsulation by implementing set() and get()
+    // Tell don't ask, pass in an object
+    //if we're comparing the length of triangle with a rectangle,
+    // we pass in the object of triangle, compute inside this object, and return the result
+
+    public int getWidth(){
+        return width;
     }
+
+    public int getHeight(){
+        return height;
+    }
+
+ */
 }

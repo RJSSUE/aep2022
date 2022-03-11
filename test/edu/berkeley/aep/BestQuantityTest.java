@@ -39,14 +39,6 @@ public class BestQuantityTest {
         bestQuantity.findMax();
     }
 
-    @Test(expected = NullPointerException.class)
-    public void nullValueException() {
-        var length1 = new ArithmeticQuantity(Unit.INCH, 1.0);
-        var length2 = new ArithmeticQuantity(Unit.INCH, null);
-        var bestQuantity = new BestQuantity(length1, length2);
-        bestQuantity.findMax();
-    }
-
     @Test(expected = ArrayIndexOutOfBoundsException.class)
     public void EmptyListException() {
         var bestQuantity = new BestQuantity();

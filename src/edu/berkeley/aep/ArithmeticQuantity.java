@@ -3,7 +3,7 @@ package edu.berkeley.aep;
 //compare and calculate metrics in different units
 public class ArithmeticQuantity extends ScaledQuantity {
 
-    public ArithmeticQuantity(Unit unit, Double value) {
+    public ArithmeticQuantity(Unit unit, double value) {
         super(unit, value);
     }
 

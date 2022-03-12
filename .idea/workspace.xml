@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e81e640d-5c4e-4bda-af14-897fac96cf0a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/edu/berkeley/aep/ArithmeticQuantity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/berkeley/aep/ArithmeticQuantity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/edu/berkeley/aep/BestQuantityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/edu/berkeley/aep/BestQuantityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/berkeley/aep/ScaledQuantity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/berkeley/aep/ScaledQuantity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +19,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="26GDhVsFYx62R8yM4yNm0CfBWHW" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -27,6 +30,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
     <configuration name="BestQuantityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">

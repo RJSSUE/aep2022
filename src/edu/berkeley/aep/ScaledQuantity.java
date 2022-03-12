@@ -28,9 +28,9 @@ public class ScaledQuantity implements Bestable<ScaledQuantity> {
 
     @Override
     public boolean betterThan(ScaledQuantity other) {
+        bombIfNotSameCategory(other);
         return convertToMinimumUnit() > other.convertToMinimumUnit();
     }
-
     void bombIfNotSameCategory(ScaledQuantity other) {
         if (!unit.isSameCategory(other.unit)) throw new RuntimeException("Cannot compare between different categories!");
     }

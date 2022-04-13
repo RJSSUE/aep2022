@@ -2,27 +2,51 @@ package edu.berkeley.aep;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
+import java.util.StringTokenizer;
 
 //Understands the arithmetic expression and compute its value
 public class Calculator {
-    private final String expression;
-    private List<Double> values = new ArrayList<>();
+    private final StringTokenizer expression;
+    private Stack<Double> values = new Stack<>();
+    private Stack<String> operators = new Stack<>();
     public Calculator(String content){
-        expression = content;
+        expression = new StringTokenizer(content,"+-*/",true);
     }
 
     public Double calculate() {
-        for (var value: expression.split("[+*/-]")){
-            values.add(Double.parseDouble(value));
+        while(expression.hasMoreTokens()){
+            String nextToken = expression.nextToken();
+            if ("+-*/".contains(nextToken)){
+                operators.add(nextToken);
+            } else {
+                values.add(Double.parseDouble(nextToken));
+            }
         }
-        if (expression.contains("+")) {
-            return values.get(0) + values.get(1);
-        } else if (expression.contains("*")) {
-            return values.get(0) * values.get(1);
-        } else if (expression.contains("-")) {
-            return values.get(0) - values.get(1);
-        } else {
-            return values.get(0) / values.get(1);
+        while (!operators.isEmpty()){
+            if (values.size()<2){
+                throw new RuntimeException("Invalid expression!");
+            }
+            var value2 = values.pop();
+            var value1 = values.pop();
+            switch (operators.pop()){
+                case "+":
+                    values.add(value1+value2);
+                    break;
+                case "-":
+                    values.add(value1-value2);
+                    break;
+                case "*":
+                    values.add(value1*value2);
+                    break;
+                case "/":
+                    values.add(value1/value2);
+                    break;
+            }
         }
+        if (values.size()!=1){
+            throw new RuntimeException("Invalid expression!");
+        }
+        return values.get(0);
     }
 }

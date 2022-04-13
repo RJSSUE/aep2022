@@ -66,6 +66,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CalculatorTest.emptyStringIsNotValidExpression" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aep" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.berkeley.aep.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.berkeley.aep" />
+      <option name="MAIN_CLASS_NAME" value="edu.berkeley.aep.CalculatorTest" />
+      <option name="METHOD_NAME" value="emptyStringIsNotValidExpression" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CalculatorTest.oneAddTwoShouldBeThree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aep" />
       <extension name="coverage">
@@ -114,28 +130,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aep" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.berkeley.aep.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.berkeley.aep" />
-      <option name="MAIN_CLASS_NAME" value="edu.berkeley.aep.ChanceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CalculatorTest" />
+        <item itemvalue="JUnit.CalculatorTest.emptyStringIsNotValidExpression" />
         <item itemvalue="JUnit.CalculatorTest.sevenMinusTwoShouldBeFive" />
         <item itemvalue="JUnit.CalculatorTest.twoAddTwoPointFiveShouldBeFourPointFive" />
         <item itemvalue="JUnit.CalculatorTest.oneAddTwoShouldBeThree" />
-        <item itemvalue="JUnit.ChanceTest" />
       </list>
     </recent_temporary>
   </component>

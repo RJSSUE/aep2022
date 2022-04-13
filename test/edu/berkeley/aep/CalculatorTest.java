@@ -46,4 +46,11 @@ public class CalculatorTest {
         var calculator = new Calculator("2+2.5-3");
         assertEquals(1.5, calculator.calculate(),1e-5);
     }
+
+    @Test(expected = RuntimeException.class)
+    public void emptyStringIsNotValidExpression() {
+        var calculator = new Calculator("");
+        calculator.calculate();
+
+    }
 }

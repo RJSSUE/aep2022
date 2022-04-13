@@ -64,4 +64,10 @@ public class CalculatorTest {
         var calculator = new Calculator("2*(3+4)/2");
         assertEquals(7, calculator.calculate(),1e-5);
     }
+
+    @Test
+    public void complicatedTest() {
+        var calculator = new Calculator("2.5*(3+4.2)/3.6");
+        assertEquals(5, calculator.calculate(),1e-5);
+    }
 }

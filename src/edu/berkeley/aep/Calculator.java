@@ -6,14 +6,14 @@ import java.util.List;
 //Understands the arithmetic expression and compute its value
 public class Calculator {
     private final String expression;
-    private List<Integer> values = new ArrayList<>();
+    private List<Double> values = new ArrayList<>();
     public Calculator(String content){
         expression = content;
     }
 
-    public int calculate() {
+    public double calculate() {
         for (var value: expression.split("[+*/-]")){
-            values.add(Integer.parseInt(value));
+            values.add(Double.parseDouble(value));
         }
         if (expression.contains("+")) {
             return values.get(0) + values.get(1);

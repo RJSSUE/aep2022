@@ -22,4 +22,10 @@ public class CalculatorTest {
         var calculator = new Calculator("8/2");
         assertEquals(4, calculator.calculate());
     }
+
+    @Test
+    public void sevenMinusTwoShouldBeFive() {
+        var calculator = new Calculator("7-2");
+        assertEquals(5, calculator.calculate());
+    }
 }

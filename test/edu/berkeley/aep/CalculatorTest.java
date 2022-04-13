@@ -16,4 +16,10 @@ public class CalculatorTest {
         var calculator = new Calculator("2*3");
         assertEquals(6, calculator.calculate());
     }
+
+    @Test
+    public void eightDivideTwoShouldBeFour() {
+        var calculator = new Calculator("8/2");
+        assertEquals(4, calculator.calculate());
+    }
 }

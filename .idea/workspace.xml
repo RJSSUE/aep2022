@@ -6,21 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e81e640d-5c4e-4bda-af14-897fac96cf0a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/aep/edu/berkeley/aep/ArithmeticQuantity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/aep/edu/berkeley/aep/BestQuantity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/aep/edu/berkeley/aep/Bestable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/aep/edu/berkeley/aep/Chance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/aep/edu/berkeley/aep/MyString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/aep/edu/berkeley/aep/Rectangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/aep/edu/berkeley/aep/ScaledQuantity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/aep/edu/berkeley/aep/Unit$Category.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/aep/edu/berkeley/aep/Unit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/aep/edu/berkeley/aep/BestQuantityTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/aep/edu/berkeley/aep/ChanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/aep/edu/berkeley/aep/RectangleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/aep/edu/berkeley/aep/SquareTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/aep/edu/berkeley/aep/StringTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/aep/edu/berkeley/aep/UnitTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/berkeley/aep/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/berkeley/aep/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/edu/berkeley/aep/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/edu/berkeley/aep/CalculatorTest.java" afterDir="false" />
     </list>
@@ -43,7 +28,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="26GDhVsFYx62R8yM4yNm0CfBWHW" />
   <component name="ProjectViewState">

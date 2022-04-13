@@ -66,6 +66,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CalculatorTest.complicatedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aep" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.berkeley.aep.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.berkeley.aep" />
+      <option name="MAIN_CLASS_NAME" value="edu.berkeley.aep.CalculatorTest" />
+      <option name="METHOD_NAME" value="complicatedTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CalculatorTest.emptyStringIsNotValidExpression" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aep" />
       <extension name="coverage">
@@ -82,7 +98,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.sevenMinusTwoShouldBeFive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculatorTest.twoMultiplyLeftParenthesisThreeAddFourRightParenthesisDivideTwoShouldBeSeven" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aep" />
       <extension name="coverage">
         <pattern>
@@ -92,23 +108,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="edu.berkeley.aep" />
       <option name="MAIN_CLASS_NAME" value="edu.berkeley.aep.CalculatorTest" />
-      <option name="METHOD_NAME" value="sevenMinusTwoShouldBeFive" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalculatorTest.twoAddTwoPointFiveShouldBeFourPointFive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aep" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.berkeley.aep.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.berkeley.aep" />
-      <option name="MAIN_CLASS_NAME" value="edu.berkeley.aep.CalculatorTest" />
-      <option name="METHOD_NAME" value="twoAddTwoPointFiveShouldBeFourPointFive" />
+      <option name="METHOD_NAME" value="twoMultiplyLeftParenthesisThreeAddFourRightParenthesisDivideTwoShouldBeSeven" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -133,10 +133,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CalculatorTest" />
+        <item itemvalue="JUnit.CalculatorTest.complicatedTest" />
+        <item itemvalue="JUnit.CalculatorTest.twoMultiplyLeftParenthesisThreeAddFourRightParenthesisDivideTwoShouldBeSeven" />
         <item itemvalue="JUnit.CalculatorTest.twoMultiplyThreeAddFourDivideTwoShouldBeEight" />
         <item itemvalue="JUnit.CalculatorTest.emptyStringIsNotValidExpression" />
-        <item itemvalue="JUnit.CalculatorTest.sevenMinusTwoShouldBeFive" />
-        <item itemvalue="JUnit.CalculatorTest.twoAddTwoPointFiveShouldBeFourPointFive" />
       </list>
     </recent_temporary>
   </component>

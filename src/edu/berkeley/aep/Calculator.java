@@ -10,19 +10,23 @@ public class Calculator {
     private Stack<String> operators = new Stack<>();
     public Calculator(String content){
         expression = content;
-        tokenize();
     }
 
     public void tokenize(){
-        var tokenizer = new StringTokenizer(expression,"+-*/",true);
+        var tokenizer = new StringTokenizer(expression,"+-*/()",true);
         while(tokenizer.hasMoreTokens()){
             String nextToken = tokenizer.nextToken();
-            if ("+-".contains(nextToken)) { // "*/" > "+-"
+            if ("+-".contains(nextToken)) { // priority "*/" > "+-"
                 while (!operators.isEmpty() && "*/".contains(operators.peek())) {
                     values.add(oneStep());
                 }
-            }
-            if ("+-*/".contains(nextToken)){
+                operators.add(nextToken);
+            } else if (")".contains(nextToken)) { // priority: "()" first
+                while (!operators.isEmpty() && !"(".contains(operators.peek())){
+                    values.add(oneStep());
+                }
+                operators.pop();// pop out "("
+            } else if ("*/(".contains(nextToken)) {
                 operators.add(nextToken);
             } else {
                 values.add(Double.parseDouble(nextToken));
@@ -51,6 +55,7 @@ public class Calculator {
     }
 
     public Double calculate() {
+        tokenize();
         while (!operators.isEmpty()){
             values.add(oneStep());
         }

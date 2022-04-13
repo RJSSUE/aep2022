@@ -58,4 +58,10 @@ public class CalculatorTest {
         var calculator = new Calculator("2*3+4/2");
         assertEquals(8, calculator.calculate(),1e-5);
     }
+
+    @Test
+    public void twoMultiplyLeftParenthesisThreeAddFourRightParenthesisDivideTwoShouldBeSeven() {
+        var calculator = new Calculator("2*(3+4)/2");
+        assertEquals(7, calculator.calculate(),1e-5);
+    }
 }

@@ -51,6 +51,11 @@ public class CalculatorTest {
     public void emptyStringIsNotValidExpression() {
         var calculator = new Calculator("");
         calculator.calculate();
+    }
 
+    @Test
+    public void twoMultiplyThreeAddFourDivideTwoShouldBeEight() {
+        var calculator = new Calculator("2*3+4/2");
+        assertEquals(8, calculator.calculate(),1e-5);
     }
 }

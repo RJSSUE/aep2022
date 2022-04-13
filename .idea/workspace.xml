@@ -82,22 +82,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.oneAddTwoShouldBeThree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aep" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.berkeley.aep.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.berkeley.aep" />
-      <option name="MAIN_CLASS_NAME" value="edu.berkeley.aep.CalculatorTest" />
-      <option name="METHOD_NAME" value="oneAddTwoShouldBeThree" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CalculatorTest.sevenMinusTwoShouldBeFive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aep" />
       <extension name="coverage">
@@ -130,13 +114,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CalculatorTest.twoMultiplyThreeAddFourDivideTwoShouldBeEight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aep" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.berkeley.aep.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.berkeley.aep" />
+      <option name="MAIN_CLASS_NAME" value="edu.berkeley.aep.CalculatorTest" />
+      <option name="METHOD_NAME" value="twoMultiplyThreeAddFourDivideTwoShouldBeEight" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CalculatorTest" />
+        <item itemvalue="JUnit.CalculatorTest.twoMultiplyThreeAddFourDivideTwoShouldBeEight" />
         <item itemvalue="JUnit.CalculatorTest.emptyStringIsNotValidExpression" />
         <item itemvalue="JUnit.CalculatorTest.sevenMinusTwoShouldBeFive" />
         <item itemvalue="JUnit.CalculatorTest.twoAddTwoPointFiveShouldBeFourPointFive" />
-        <item itemvalue="JUnit.CalculatorTest.oneAddTwoShouldBeThree" />
       </list>
     </recent_temporary>
   </component>
@@ -161,21 +161,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/edu/berkeley/aep/Calculator.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/edu/berkeley/aep/Calculator.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

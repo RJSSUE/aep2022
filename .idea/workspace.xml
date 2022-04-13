@@ -96,6 +96,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CalculatorTest.twoAddTwoPointFiveShouldBeFourPointFive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aep" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.berkeley.aep.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.berkeley.aep" />
+      <option name="MAIN_CLASS_NAME" value="edu.berkeley.aep.CalculatorTest" />
+      <option name="METHOD_NAME" value="twoAddTwoPointFiveShouldBeFourPointFive" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ChanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aep" />
       <extension name="coverage">
@@ -114,6 +130,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CalculatorTest" />
+        <item itemvalue="JUnit.CalculatorTest.twoAddTwoPointFiveShouldBeFourPointFive" />
         <item itemvalue="JUnit.CalculatorTest.oneAddTwoShouldBeThree" />
         <item itemvalue="JUnit.ChanceTest" />
         <item itemvalue="JUnit.BestQuantityTest" />

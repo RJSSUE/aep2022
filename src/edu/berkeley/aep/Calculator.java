@@ -11,7 +11,7 @@ public class Calculator {
         expression = content;
     }
 
-    public double calculate() {
+    public Double calculate() {
         for (var value: expression.split("[+*/-]")){
             values.add(Double.parseDouble(value));
         }

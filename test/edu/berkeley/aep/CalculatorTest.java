@@ -34,4 +34,10 @@ public class CalculatorTest {
         var calculator = new Calculator("5/2");
         assertEquals(2.5, calculator.calculate(),1e-5);
     }
+
+    @Test
+    public void twoAddTwoPointFiveShouldBeFourPointFive() {
+        var calculator = new Calculator("2+2.5");
+        assertEquals(4.5, calculator.calculate(),1e-5);
+    }
 }
